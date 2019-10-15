@@ -366,6 +366,10 @@ module Kraken
       post_private 'ClosedOrders', opts
     end
 
+    def post_private_utility(method, opts = {})
+      post_private(method, opts)
+    end
+
     private
 
     # HTTP GET request for public API queries.
